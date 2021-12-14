@@ -1,0 +1,266 @@
+.hello__container {
+	display: flex;
+	height: 520px;
+	padding-top: 135px;
+	padding-bottom: 70px;
+	justify-content: space-between;
+
+	@media (max-width: $md1) {
+		padding: 135px 15px 70px 15px;
+	}
+
+	@media (max-width: $md2) {
+	   flex-wrap: wrap-reverse;
+	   justify-content: center;
+	   text-align: center;
+	   padding: 33px 15px 58px 15px;
+	   height: 620px;
+  }
+  
+  @media (max-width: $md3) {
+  		height: 590px;
+  }
+
+}
+.hello__content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-top: 18px;
+
+	@media (max-width: $md2){
+		align-items:center;
+	}
+
+	@media (max-width: $md3){
+		margin-bottom: 58px;
+		padding-top:34px;
+	}
+}
+.hello__title {
+	font-weight: 700;
+	font-size: 44px;
+	line-height: 60px;
+	@media (max-width: $md3){
+		font-size: 32px;
+		line-height: 48px;
+	}
+}
+.hello__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 23px;
+	width: 499px;
+
+	@media (max-width: $md2){
+		width: 100%;
+	}
+}
+.hello__btn {
+	font-size: 20px;
+	color:#fff;
+	background-color: #FF6464;
+	padding: 0px 20px;
+	height: 47px;
+	width: 208px;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 2px;
+	justify-content: center;
+
+	&:hover{
+		background-color: #CF5252;
+	}
+
+}
+.hello__avatar {
+	@media (max-width: $md3){
+		height: 180px;
+	}
+}
+	 
+.hello__avatar__img {
+	 @media (max-width: $md2){
+    	width: 180px;
+    	height: 180px;
+  }
+}
+
+.recent-posts {
+	background-color: #EDF7FA;
+	padding-bottom: 32px;
+	padding-top: 9px;
+}
+.recent-posts__container{
+	@media (max-width: $md1) {
+	padding: 0px 15px 0px 15px;	
+	}
+}
+
+.recent-posts__header {
+	display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @media (max-width: $md3) {
+   	justify-content: center;
+   }
+}
+.recent-posts__title {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 60px;
+}
+.recent-posts__view-all {
+	color: #00A8CC;
+	font-size: 16px;
+	font-weight: 400;
+
+	&:hover{
+		transition: color 0.3s ease 0s;
+		color: #21243D;
+	}
+
+	@media (max-width: $md3) {
+		display: none;
+	}
+}
+.recent-posts__content{
+	display: flex;
+   justify-content: space-between;
+   margin: -10px;
+
+	@media (max-width: $md3){
+		flex-wrap:wrap;
+	}
+
+}
+.recent-posts__items {
+	background-color: #fff;
+	padding:25px;
+	height: 100%;
+	margin: 10px;
+}
+.recent-post__title {
+	font-size: 26px;
+	line-height: 38px;
+	font-weight: 700;
+	color: #21243D;
+	&:hover{
+		transition: color 0.3s ease 0s;
+		color: #FF6464;
+	}
+}
+.recent-post__info {
+	font-size: 18px;
+	line-height: 26px;
+	margin: 25px 0px;
+	span{
+		margin: 0px 10px;
+	}
+}
+.recent-post__text {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 400;
+}
+
+.featured-works__container {
+	@media (max-width: $md1){
+    	padding: 0px 15px;
+   }
+
+}
+.featured-works__title {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 60px;
+	margin-bottom: 22px;
+	margin-top: 15px;
+
+	@media (max-width: $md3) {
+		text-align: center;
+	}
+}
+
+.works__item {
+	display: flex;
+	border-bottom: 1px solid #E0E0E0;
+	padding-bottom: 35px;
+	margin-bottom: 35px;
+
+	@media (max-width: $md3) {
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+}
+
+.works__item--hide{
+	@media (max-width: $md3) {
+		display: none;
+	}
+}
+
+.works__image__img{
+	@media (max-width: $md3) {
+		width: 340px;
+		height: 230px;
+	}
+}
+
+.work__content {
+	padding-left: 20px;
+	display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+   @media (max-width: $md3){
+   	padding-left: 0px;
+   	width: 340px;
+   }
+}
+
+
+.work__title {
+	font-size: 30px;
+	line-height: 44px;
+	font-weight: 700;
+	color: #21243D;
+
+	&:hover{
+		transition: color 0.3s ease 0s;
+		color: #FF6464;
+	}
+}
+
+.work__info {
+	display: flex;
+	@media (max-width: $md3) {
+		padding: 10px 0;
+	}
+}
+
+.work__info__year {
+	font-weight: 700;
+	font-size: 18px;
+	color: #fff;
+	background: #142850;
+	border-radius: 16px;
+	height: 25px;
+	width: 62px;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.work__info__category {
+	font-size: 20px;
+	line-height: 29px;
+	color: #8695A4;
+	font-weight: 400;
+	margin-left: 26px;
+}
+.work__text {
+	font-size: 16px;
+	line-height: 23px;
+}
+

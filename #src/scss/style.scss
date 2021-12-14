@@ -1,0 +1,54 @@
+/*-----------------*/
+
+$fontFamily: "Heebo";
+$fontSize: 16px;
+
+$minWidth: 320px;
+$maxWidth: 1152px;
+$maxWidthContainer: 858px;
+$md1: $maxWidthContainer + 12px;
+$md2: 767.98px;
+$md3: 479.98px;
+
+$mainColor: #21243D;
+
+/*-----------------*/
+@import "null.scss";
+@import "mixins";
+@import "fonts.scss";
+@import "icons.scss";
+@import "header.scss";
+@import "main.scss";
+@import "footer.scss";
+
+body {
+  color: $mainColor;
+  font-size: $fontSize;
+  &._lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: $maxWidthContainer;
+  margin: 0 auto;
+
+  @media (max-width: $md1) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
